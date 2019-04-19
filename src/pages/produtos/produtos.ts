@@ -35,7 +35,10 @@ export class ProdutosPage {
     }
   }
 
-  showDetail(){
-    this.navCtrl.push('ProdutoDetailPage');
+  showDetail(produtoId: string){
+    this.navCtrl.push('ProdutoDetailPage', 
+      {
+        produtoId: produtoId
+      });
   }
 }
