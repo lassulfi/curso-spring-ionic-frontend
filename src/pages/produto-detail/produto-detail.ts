@@ -37,7 +37,6 @@ export class ProdutoDetailPage {
 
   addToCart(produto: ProdutoDTO) {
     this.cartService.addProduto(produto);
-    console.log('Produto adicionado ao carrinho: id = ' + produto.id + ", nome = " + produto.nome);
     this.navCtrl.setRoot('CartPage');
   }
 }
